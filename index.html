@@ -32,14 +32,11 @@
     <meta name="theme-color" content="#ffffff">
 
     <!--連結-->
-    
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="themes/cs.min.css" />
+    <link rel="stylesheet" href="themes/color.css" />
     <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>		
     
     <title>高雄美食</title>
@@ -71,6 +68,7 @@
                 <p>看我</p>
                 </div>
         </div>
+        
 
         </div><!-- /content -->
 
@@ -95,17 +93,20 @@
         <div role="main" class="ui-content">
             
             <h1>日式燒烤</h1>
-            <h2>田季發爺</h2>
+            <ol data-role="listview">
+            <li>田季發爺</li>
             <p>有服務生幫忙烤肉!</p>
-            <h2>千兵衛</h2>
+            <li>千兵衛</li>
             <p>非常多種選擇! 高cp值</p>
-            <h2>乾杯</h2>
+            <li>乾杯</li>
             <p>適合聚會</p>
-            <a href="#main">回到主頁</a>
-            <a href="#page2">西式餐點</a>
-            <a href="#page3">火鍋</a>
-            <a href="#page4">牛排</a>
-
+        </ol>
+        <div data-role="controlgroup" data-type="horizontal">
+            <a href="#main" data-role="button"class="ui-btn ui-icon-home ui-btn-icon-right">回到主頁</a>
+            <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">西式餐點</a>
+            <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">火鍋</a>
+            <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">牛排</a>
+        </div>
         </div><!-- /content -->
 
         <div data-role="footer">
@@ -127,15 +128,18 @@
         <div role="main" class="ui-content">
             
             <h1>西式餐點</h1>
-            <h2>西堤</h2>
+            <ol data-role="listview">
+            <li>西堤</li>
             <p>吃個氣氛</p>
-            <h2>貝果貝果之東西廚房</h2>
+            <li>貝果貝果之東西廚房</li>
             <p>食物好吃!</p>
-            <a href="#main">回到主頁</a>
-            <a href="#page1">燒烤</a>
-            <a href="#page3">火鍋</a>
-            <a href="#page4">牛排</a>
-
+        </ol>
+            <div data-role="controlgroup" data-type="horizontal">
+            <a href="#main" data-role="button"class="ui-btn ui-icon-home ui-btn-icon-right">回到主頁</a>
+            <a href="#page1" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">燒烤</a>
+            <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">火鍋</a>
+            <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">牛排</a>
+        </div>
         </div><!-- /content -->
 
         <div data-role="footer">
@@ -155,17 +159,19 @@
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-
+            <ol data-role="listview">
             <h1>火鍋</h1>
-            <h2>肉多多</h2>
+            <li>肉多多</li>
             <p>每盤肉都非常大盤絕對管飽</p>
-            <h2>石二鍋</h2>
+            <li>石二鍋</li>
             <p>用餐環境舒服</p>
-            <a href="#main">回到主頁</a>
-            <a href="#page1">燒烤</a>
-            <a href="#page2">西式餐點</a>
-            <a href="#page4">牛排</a>
-
+            </ol>
+            <div data-role="controlgroup" data-type="horizontal">
+            <a href="#main"data-role="button"class="ui-btn ui-icon-home ui-btn-icon-right">回到主頁 </a>
+            <a href="#page1" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">燒烤</a>
+            <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">西式餐點</a>
+            <a href="#page4" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">牛排</a>
+        </div>
         </div><!-- /content -->
 
         <div data-role="footer">
@@ -187,15 +193,18 @@
         <div role="main" class="ui-content">
 
             <h1>牛排</h1>
-            <h2>萬國牛排</h2>
+            <ol data-role="listview">
+            <li>萬國牛排</li>
             <p>上菜非常迅速</p>
-            <h2>牛小弟牛排</h2>
+            <li>牛小弟牛排</li>
             <p>價格較為親民</p>
-            <a href="#main">回到主頁</a>
-            <a href="#page1">燒烤</a>
-            <a href="#page2">西式餐點</a>
-            <a href="#page3">火鍋</a>
-
+            </ol>
+            <div data-role="controlgroup" data-type="horizontal">
+            <a href="#main"data-role="button"class="ui-btn ui-icon-home ui-btn-icon-right">回到主頁</a>
+            <a href="#page1" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">燒烤</a>
+            <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">西式餐點</a>
+            <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">火鍋</a>
+        </div>
         </div><!-- /content -->
 
         <div data-role="footer">
@@ -217,12 +226,11 @@
         <div role="main" class="ui-content">
 
             <h1>就愛吃</h1>
-            
-            <a href="#main">回到主頁</a>
-            <a href="#page1">燒烤</a>
-            <a href="#page2">西式餐點</a>
-            <a href="#page3">火鍋</a>
-
+            <a href="#main" data-role="button"class="ui-btn ui-icon-home ui-btn-icon-right">回到主頁</a>
+            <a href="#page1" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">燒烤</a>
+            <a href="#page2" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">西式餐點</a>
+            <a href="#page3" data-role="button"class="ui-btn ui-icon-arrow-r ui-btn-icon-right">火鍋</a>
+ \
         </div><!-- /content -->
 
         <div data-role="footer">
